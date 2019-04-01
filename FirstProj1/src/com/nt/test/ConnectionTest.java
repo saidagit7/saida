@@ -12,9 +12,11 @@ public class ConnectionTest {
 		 //connection
 		 con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522:orcl", "hr", "hr");
 		//driver
-		 if(con==null)
+		 if(con==null) {
 			 System.out.println("connection is failed");
-		 else
+		 }//if
+		 else {
 			 System.out.println("Connection is Succssfull");
+		 }//else
 	}
 }
