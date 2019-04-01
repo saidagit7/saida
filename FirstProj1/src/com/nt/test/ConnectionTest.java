@@ -11,6 +11,7 @@ public class ConnectionTest {
 		 Class.forName("oracle.jdbc.driver.OracleDriver");
 		 //connection
 		 con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522:orcl", "hr", "hr");
+		//driver
 		 if(con==null)
 			 System.out.println("connection is failed");
 		 else
